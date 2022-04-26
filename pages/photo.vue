@@ -1,0 +1,122 @@
+<template>
+  <div class="bg-green-800 text-gray-200 w-full h-screen">
+
+    <div class="p-4">
+      <a href="#" class="btn" @click="toggleCamera">
+        <span v-if="!isCameraOpen">Open Camera</span>
+        <span v-else>Close Camera</span>
+      </a>
+    </div>
+    
+    <div v-show="isCameraOpen && isLoading">
+      <p class="text-gray-200">Loading...</p>
+    </div>
+    
+    <div v-if="isCameraOpen" v-show="!isLoading" class="p-8">
+      <video class="border-2 border-white" v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
+      <canvas class="border-2 border-green-200" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
+    </div>
+    
+    <div v-if="isCameraOpen && !isLoading" class="p-4">
+      <a href="#" class="btn" @click="takePhoto">
+        <i class="ri-camera-fill"></i>&nbsp;&nbsp;Take Photo
+      </a>
+    </div>
+    
+    <div v-if="isPhotoTaken && isCameraOpen" class="p-4">
+      <a href="#" id="downloadPhoto" class="btn" role="button" @click="downloadImage">
+        Continue
+      </a>
+    </div>
+
+  </div>
+</template>
+
+
+<script>
+const FLASH_TIMEOUT = 50;
+
+export default {
+
+  data: function() {
+    return {
+      id: undefined,
+      back: undefined,
+      isCameraOpen: false,
+      isPhotoTaken: false,
+      isShotPhoto: false,
+      isLoading: false,
+      link: '#'
+    }
+  },
+
+  mounted: async function() {
+    this.id = this.$route.query.id;
+    this.back = this.$route.query.back;
+  },
+  
+  methods: {
+    
+    toggleCamera() {
+      if(this.isCameraOpen) {
+        this.isCameraOpen = false;
+        this.isPhotoTaken = false;
+        this.isShotPhoto = false;
+        this.stopCameraStream();
+      } else {
+        this.isCameraOpen = true;
+        this.createCameraElement();
+      }
+    },
+    
+    createCameraElement() {
+      this.isLoading = true;
+      
+      const constraints = (window.constraints = {
+				audio: false,
+				video: true
+			});
+
+			navigator.mediaDevices
+				.getUserMedia(constraints)
+				.then(stream => {
+          this.isLoading = false;
+					this.$refs.camera.srcObject = stream;
+				})
+				.catch(error => {
+          this.isLoading = false;
+					alert("May the browser didn't support or there is some errors.");
+				});
+    },
+    
+    stopCameraStream() {
+      let tracks = this.$refs.camera.srcObject.getTracks();
+			tracks.forEach(track => {
+				track.stop();
+			});
+    },
+    
+    takePhoto() {
+      if(!this.isPhotoTaken) {
+        this.isShotPhoto = true;
+        setTimeout(() => {
+          this.isShotPhoto = false;
+        }, FLASH_TIMEOUT);
+      }
+      this.isPhotoTaken = !this.isPhotoTaken;
+      const context = this.$refs.canvas.getContext('2d');
+      context.drawImage(this.$refs.camera, 0, 0, 450, 337.5);
+    },
+    
+    downloadImage() {
+      const download = document.getElementById("downloadPhoto");
+      const canvas = document.getElementById("photoTaken").toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+      console.log(canvas);
+      this.$storage.setUniversal(this.id, canvas);
+      window.location = this.back;
+
+    }
+  }
+
+}
+</script>
