@@ -1,5 +1,11 @@
 <template>
-  <Tutorial/>
+  <div>
+    <NavBar />
+    <Hero />
+    <Highlights />
+    <Info />
+    <Footer />
+  </div>
 </template>
 
 <script>
