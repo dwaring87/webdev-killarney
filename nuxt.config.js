@@ -39,10 +39,14 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/universal-storage',
+    'nuxt-leaflet'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  storage: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

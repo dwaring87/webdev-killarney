@@ -9,7 +9,7 @@
           </a>
         </div>
         <div>
-          <a href="/start">
+          <a href="/tours">
             <i class="ri-play-circle-line"></i>&nbsp;&nbsp;Start a Tour
           </a>
         </div>

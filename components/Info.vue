@@ -1,7 +1,7 @@
 <template>
 
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="bg-white">
+  <div class="bg-gray-50">
     <!-- Header -->
     <div class="relative pb-32 bg-gray-800">
       <div class="absolute inset-0">
@@ -24,7 +24,7 @@
         
         <div class="flex flex-col bg-white rounded-2xl shadow-xl">
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-            <div class="absolute top-0 p-4 inline-block bg-green-600 rounded-xl shadow-lg transform -translate-y-1/2">
+            <div class="absolute top-0 p-4 inline-block bg-green-800 rounded-xl shadow-lg transform -translate-y-1/2">
               <i class="ri-riding-line text-gray-200 text-2xl"></i>
             </div>
             <h3 class="text-xl font-medium text-gray-900">Rent a Bike</h3>
@@ -39,7 +39,7 @@
 
         <div class="flex flex-col bg-white rounded-2xl shadow-xl">
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-            <div class="absolute top-0 p-4 inline-block bg-green-600 rounded-xl shadow-lg transform -translate-y-1/2">
+            <div class="absolute top-0 p-4 inline-block bg-green-800 rounded-xl shadow-lg transform -translate-y-1/2">
               <i class="ri-group-line text-gray-200 text-2xl"></i>
             </div>
             <h3 class="text-xl font-medium text-gray-900">Join a Group</h3>
@@ -51,14 +51,14 @@
 
         <div class="flex flex-col bg-white rounded-2xl shadow-xl">
           <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-            <div class="absolute top-0 p-4 inline-block bg-green-600 rounded-xl shadow-lg transform -translate-y-1/2">
+            <div class="absolute top-0 p-4 inline-block bg-green-800 rounded-xl shadow-lg transform -translate-y-1/2">
               <i class="ri-play-circle-line text-gray-200 text-2xl"></i>
             </div>
             <h3 class="text-xl font-medium text-gray-900">Start a Tour</h3>
             <p class="mt-4 text-base text-gray-500">Choose a tour, gather at the starting point, and let us guide you to some of Killarney's best attractions!</p>
           </div>
           <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-            <a href="/start" class="text-base font-medium text-green-700 hover:text-green-600">Choose a Tour<span aria-hidden="true"> &rarr;</span></a>
+            <a href="/tours" class="text-base font-medium text-green-700 hover:text-green-600">Choose a Tour<span aria-hidden="true"> &rarr;</span></a>
           </div>
         </div>
       </div>

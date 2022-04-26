@@ -5,7 +5,7 @@
       <div class="flex flex-wrap justify-between items-center my-6">
         <img src="/images/cycle2.jpg" class="rounded-lg mx-auto max-w-sm lg:max-w-md" />
         <div class="lg:max-w-md">
-          <h1 class="text-2xl font-extrabold text-green-600 text-center md:text-3xl lg:text-4xl my-2">
+          <h1 class="text-2xl font-extrabold text-green-800 text-center md:text-3xl lg:text-4xl my-2">
             Explore by Bike
           </h1>
           <p class="text-center">
@@ -17,7 +17,7 @@
       <div class="flex flex-wrap justify-between items-center my-6">
         <img src="/images/cycle1.jpg" class="rounded-lg mx-auto max-w-sm lg:max-w-md" />
         <div class="lg:max-w-md">
-          <h1 class="text-2xl font-extrabold text-green-600 text-center md:text-3xl lg:text-4xl my-2">
+          <h1 class="text-2xl font-extrabold text-green-800 text-center md:text-3xl lg:text-4xl my-2">
             At Your Own Pace
           </h1>
           <p class="text-center">
@@ -29,7 +29,7 @@
       <div class="flex flex-wrap justify-between items-center my-6">
         <img src="/images/cycle3.jpg" class="rounded-lg mx-auto max-w-sm lg:max-w-md" />
         <div class="lg:max-w-md">
-          <h1 class="text-2xl font-extrabold text-green-600 text-center md:text-3xl lg:text-4xl my-2">
+          <h1 class="text-2xl font-extrabold text-green-800 text-center md:text-3xl lg:text-4xl my-2">
             Main Attractions
           </h1>
           <p class="text-center">

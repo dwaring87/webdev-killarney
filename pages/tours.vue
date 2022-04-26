@@ -1,10 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <Continue />
-    <Hero />
-    <Highlights />
-    <Info />
+    <Tours />
     <Footer />
   </div>
 </template>
