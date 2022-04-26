@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="bg-green-800 min-h-screen">
+    <div class="bg-green-800 min-h-screen mb-14">
       
       <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Welcome, {{ name }}!</h2>
@@ -14,12 +14,13 @@
       <p class="tour px-4"><strong>Starting Point:</strong> {{ data.start.description }}</p>
       <Map v-if="data && data.start" :lat="data.start.lat" :lon="data.start.lon" />
 
-      <br /><br />
+    </div>
 
-      <div class="max-w-md py-4 mx-auto">
-        <NuxtLink :to="'/tour/' + this.tour + '/photo'">
-          <span class="btn">We're all here</span>
-        </NuxtLink>
+    <div class="w-full bg-green-800 p-4 fixed bottom-0 left-0" style="z-index: 9999">
+      <div class="max-w-xl mx-auto">
+      <NuxtLink :to="'/tour/' + this.tour + '/photo'">
+        <span class="btn">We're all here</span>
+      </NuxtLink>
       </div>
     </div>
 

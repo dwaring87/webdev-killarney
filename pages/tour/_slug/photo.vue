@@ -18,7 +18,7 @@
       <div v-if="photo_data" class="max-w-md mx-auto my-8">
         <img :src="photo_data" />
         <br />
-        <NuxtLink :to="'/tour/' + this.tour + '/stops/1'">
+        <NuxtLink :to="'/tour/' + this.tour + '/stops/1/navigate'">
           <span class="btn">Continue</span>
         </NuxtLink>
       </div>

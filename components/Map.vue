@@ -2,7 +2,7 @@
   <div style="height: 500px; width: 100%">
     <client-only>
       <l-map :zoom=17 :center="[lat,lon]">
-        <l-tile-layer url="https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png"></l-tile-layer>
+        <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"></l-tile-layer>
         <l-marker :lat-lng="[lat,lon]"></l-marker>
       </l-map>
     </client-only>

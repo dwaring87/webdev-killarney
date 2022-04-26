@@ -1,9 +1,9 @@
 <template>
   <div class="max-w-7xl mx-auto mb-12">
-    <div class="max-w-5xl px-2 mx-auto">
+    <div class="max-w-5xl px-4 mx-auto">
 
       <div class="flex flex-wrap justify-between items-center my-6">
-        <img src="/images/cycle2.jpg" class="rounded-lg mx-auto max-w-sm lg:max-w-md" />
+        <img src="/images/cycle2.jpg" class="rounded-lg mx-auto max-w-full sm:max-w-12 lg:max-w-md" />
         <div class="lg:max-w-md">
           <h1 class="text-2xl font-extrabold text-green-800 text-center md:text-3xl lg:text-4xl my-2">
             Explore by Bike
@@ -15,7 +15,7 @@
       </div>
 
       <div class="flex flex-wrap justify-between items-center my-6">
-        <img src="/images/cycle1.jpg" class="rounded-lg mx-auto max-w-sm lg:max-w-md" />
+        <img src="/images/cycle1.jpg" class="rounded-lg mx-auto max-w-full sm:max-w-12 lg:max-w-md" />
         <div class="lg:max-w-md">
           <h1 class="text-2xl font-extrabold text-green-800 text-center md:text-3xl lg:text-4xl my-2">
             At Your Own Pace
@@ -27,7 +27,7 @@
       </div>
 
       <div class="flex flex-wrap justify-between items-center my-6">
-        <img src="/images/cycle3.jpg" class="rounded-lg mx-auto max-w-sm lg:max-w-md" />
+        <img src="/images/cycle3.jpg" class="rounded-lg mx-auto max-w-full sm:max-w-12 lg:max-w-md" />
         <div class="lg:max-w-md">
           <h1 class="text-2xl font-extrabold text-green-800 text-center md:text-3xl lg:text-4xl my-2">
             Main Attractions
