@@ -1,6 +1,6 @@
 <template>
   <div v-if="page">
-    <div class="max-w-2xl mx-auto my-4 rounded-md border-2 border-green-800 bg-green-50 p-4">
+    <div class="max-w-2xl mx-auto sm:my-4 sm:rounded-md sm:border-2 border-green-800 bg-green-50 p-4">
       <div class="flex">
         <div class="flex-shrink-0">
           <i class="ri-play-circle-fill text-green-800"></i>

@@ -5,7 +5,7 @@
       <div class="h-14 flex justify-between items-center">
         <div class="font-bold">
           <a href="/">
-            <i class="ri-riding-line"></i>&nbsp;&nbsp;Killarney Cycle Tours
+            <i class="ri-riding-line"></i>&nbsp;&nbsp;Killarney Bicycle Tours
           </a>
         </div>
         <div>

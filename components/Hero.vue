@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl my-12 mx-auto sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto sm:my-12 sm:px-6 lg:px-8">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
         <img class="h-full w-full object-cover" src="/images/muckross.jpg" alt="Muckross Estate" />

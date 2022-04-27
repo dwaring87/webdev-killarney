@@ -1,32 +1,34 @@
 <template>
-  <div class="bg-green-800 text-gray-200 w-full h-screen">
-
-    <div class="p-4">
-      <a href="#" class="btn" @click="toggleCamera">
-        <span v-if="!isCameraOpen">Open Camera</span>
-        <span v-else>Close Camera</span>
-      </a>
-    </div>
+  <div class="tour-container pt-8">
     
     <div v-show="isCameraOpen && isLoading">
       <p class="text-gray-200">Loading...</p>
     </div>
     
-    <div v-if="isCameraOpen" v-show="!isLoading" class="p-8">
+    <div v-if="isCameraOpen" v-show="!isLoading">
       <video class="border-2 border-white" v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
       <canvas class="border-2 border-green-200" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
     </div>
-    
-    <div v-if="isCameraOpen && !isLoading" class="p-4">
-      <a href="#" class="btn" @click="takePhoto">
-        <i class="ri-camera-fill"></i>&nbsp;&nbsp;Take Photo
-      </a>
-    </div>
-    
-    <div v-if="isPhotoTaken && isCameraOpen" class="p-4">
-      <a href="#" id="downloadPhoto" class="btn" role="button" @click="downloadImage">
-        Continue
-      </a>
+
+    <div class="px-2 sm:pt-3 fixed bottom-0 right-0" style="z-index: 9999">
+        <div class="mx-auto flex gap-2">
+          <div v-if="!this.isCameraOpen">
+            <a href="#" class="btn" @click="toggleCamera">
+              <span v-if="!isCameraOpen">Open Camera</span>
+              <span v-else>Close Camera</span>
+            </a>
+          </div>
+          <div v-if="isPhotoTaken && isCameraOpen">
+            <a href="#" class="btn" @click="downloadImage">
+              <i class="ri-save-3-fill"></i>
+            </a>
+          </div>
+          <div v-if="isCameraOpen && !isLoading">
+            <a href="#" class="btn" @click="takePhoto">
+              <i class="ri-camera-fill"></i>
+            </a>
+          </div>
+        </div>
     </div>
 
   </div>
@@ -53,6 +55,7 @@ export default {
   mounted: async function() {
     this.id = this.$route.query.id;
     this.back = this.$route.query.back;
+    this.toggleCamera();
   },
   
   methods: {

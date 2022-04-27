@@ -9,7 +9,7 @@
             Explore by Bike
           </h1>
           <p class="text-center">
-            Biking through Killarney National Park is one of the best ways to discover all of its historical and natural attractions.  You'll be able to cover more ground than walking and see sights that are not accessible from a tour bus or jaunting car.
+            Cycling through Killarney National Park is one of the best ways to discover all of its historical and natural attractions.  You'll be able to cover more ground than walking and see sights that are not accessible from a tour bus or jaunting car.
           </p>
         </div>
       </div>
