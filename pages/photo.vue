@@ -1,11 +1,11 @@
 <template>
-  <div class="tour-container pt-8">
+  <div class="bg-green-800 w-full h-screen">
     
     <div v-show="isCameraOpen && isLoading">
       <p class="text-gray-200">Loading...</p>
     </div>
     
-    <div v-if="isCameraOpen" v-show="!isLoading">
+    <div v-if="isCameraOpen" v-show="!isLoading" style="width: 450px">
       <video class="border-2 border-gray-200" v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
       <canvas class="border-2 border-green-500" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
     </div>

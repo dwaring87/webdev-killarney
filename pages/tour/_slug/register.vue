@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-50">
     
     <div class="relative">
       <div class="lg:absolute lg:inset-0">

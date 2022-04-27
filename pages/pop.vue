@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-screen">
+  <div class="w-full min-h-screen h-full bg-gray-800">
     <div class="absolute inset-0">
-      <img class="h-screen w-full object-cover" src="/images/marvid.jpg">
+      <img class="h-full min-h-screen w-full object-cover" src="/images/marvid.jpg">
       <div class="absolute inset-0 bg-gray-600 mix-blend-multiply"></div>
     </div>
     <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
