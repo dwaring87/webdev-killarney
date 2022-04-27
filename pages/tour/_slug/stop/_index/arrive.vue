@@ -36,13 +36,14 @@ export default {
   data: function() {
     let stops = require('@/data/' + this.$route.params.slug + '.json').stops;
     let stop_index = parseInt(this.$route.params.index);
+    let stop = stops[stop_index];
     return {
       tour: this.$route.params.slug,
       name: this.$storage.getUniversal('name'),
       stop_index: stop_index,
       next_stop_index: stop_index + 1,
-      is_last_stop: stop_index === stops.length,
-      stop: stops[stop_index-1],
+      is_last_stop: stop_index === stops.length-1,
+      stop: stop,
       photo_id: 'photo-stop-' + stop_index,
       photo_data: undefined
     }

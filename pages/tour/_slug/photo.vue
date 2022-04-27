@@ -10,7 +10,7 @@
       <img class="mx-auto" :src="photo_data" />
     </div>
     <template v-if="photo_data">
-      <TourFooter :link="'/tour/' + this.tour + '/stop/1/navigate'" text="Continue"
+      <TourFooter :link="'/tour/' + this.tour + '/stop/0/navigate'" text="Continue"
         :link2="'/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/photo'" text2="Retake Photo" />
     </template>
     <template v-else>

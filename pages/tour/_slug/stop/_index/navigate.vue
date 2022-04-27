@@ -25,7 +25,7 @@ export default {
       tour: this.$route.params.slug,
       name: this.$storage.getUniversal('name'),
       stop_index: parseInt(this.$route.params.index),
-      stop: require('@/data/' + this.$route.params.slug + '.json').stops[this.$route.params.index-1]
+      stop: require('@/data/' + this.$route.params.slug + '.json').stops[this.$route.params.index]
     }
   },
 

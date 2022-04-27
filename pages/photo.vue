@@ -119,7 +119,6 @@ export default {
       console.log(canvas);
       this.$storage.setUniversal(this.id, canvas);
       window.location = this.back;
-
     }
   }
 

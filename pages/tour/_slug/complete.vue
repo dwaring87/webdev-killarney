@@ -11,7 +11,10 @@
           Congratulations {{ name }} on completing the tour!  I hope you enjoyed it and this will be start of a lifetime of exploration and adventure together.
         </p>
         <div class="mt-8">
-          <div class="inline-flex rounded-md shadow">
+          <div class="inline-flex gap-10 rounded-md shadow">
+            <NuxtLink :to="'/tour/' + this.tour + '/summary'" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+              <i class='ri-camera-fill'></i>&nbsp;&nbsp;View Photos
+            </NuxtLink>
             <NuxtLink to="/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
               <i class='ri-arrow-go-back-fill'></i>&nbsp;&nbsp;Return to Home Page
             </NuxtLink>
