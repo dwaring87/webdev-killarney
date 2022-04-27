@@ -2,15 +2,15 @@
   <div class="tour-container">
     <div class="tour-header">
       <h2>Welcome to <span class='text-yellow-500'>{{ stop.name }}</span></h2>
-      <img class="max-w-lg mx-auto m-4 rounded-md border-2 border-gray-100" :src="'/images/' + stop.arrive.photo" />
+      <img class="w-lg max-w-full mx-auto m-4 shadow-lg rounded-md border-2 border-gray-100" :src="'/images/' + stop.arrive.photo" />
     </div>
     <div class="tour-body">
       <p v-html="stop.arrive.description"></p>
     </div>
     <div class="tour-header">
       <div v-if="photo_data" class="mt-2">
-        <h3>{{ name }} at {{ stop.name }}</h3>
-        <img class="mx-auto" :src="photo_data" />
+        <h3 class="mb-2">{{ name }} at {{ stop.name }}</h3>
+        <img class="mx-auto border-2 border-gray-100 shadow-md rounded-md" :src="photo_data" />
       </div>
     </div>
     <template v-if="photo_data && is_last_stop">

@@ -15,11 +15,11 @@
         "lon": -9.494660029132469
       },
       "navigate": {
-        "description": "Directions to the Abbey",
+        "description": "Continue along the cycle path away from the town centre.  The path will pass through a wooded area as it enters the National Park.  You'll soon pass through meadows with fine views of <strong>Lough Lein</strong> (Killarney's largest lake) on your right.  Your first stop will be <strong>Muckross Abbey</strong>, the ruins of a Franciscan friary.  You'll see the church and its cemetary on the left.  At the Y-junction turn left for about 200 yards to the Abbey.",
         "photo": "abbey1.jpg"
       },
       "arrive": {
-        "description": "More detailed description of the Abbey",
+        "description": "The Franciscan friary of Irrelagh, now known as <strong>Muckross Abbey</strong> was founded for the Observatine Franciscans about 1448 by Daniel McCarthy Mor. The friars remained in occupation at Muckross at least intermittently and despite the dissolution of the monasteries until Cromwellian times. The present well-preserved ruins include a church with a wide, square tower and fine windows, and a vaulted cloister with an arcade of arches around a square courtyard. In the middle of the courtyard grows an ancient yew tree, said traditionally to be as old as the Abbey. Muckross Abbey was the burial place of local chieftains, and in the 17th and 18th centuries, the three Gaelic poets, Geoffrey O'Donoghue, Aodhagan O'Rathaille and Eoghan Rua O'Suilleabhain. The graveyard in the grounds surrounding the Abbey is still in use with a number of burials there each year.<br /><br />It's rumored that several monks were murdered when the abbey was looted and burnt by Cromwellian soldiers in 1652. A mysterious hermit lived for many years in the upstairs kitchen. History, intrigue, scary bits - it's all here.",
         "photo": "abbey2.jpg"
       }
     },
@@ -30,11 +30,11 @@
         "lon": -9.50655252967592
       },
       "navigate": {
-        "description": "Directions to the Oak Wood junction",
+        "description": "After touring the Abbey, make your way back to the Y-junction and continue on your route.  At the next junction, take the trail to the right. Here begins the Natural Zone of the park, the realm of native woods and deer.",
         "photo": "oak1.jpg"
       },
       "arrive": {
-        "description": "Here the trail divides, stay to the right",
+        "description": "The tour will now pass through Killarney's Oak Woods as it circles Muckross Lake.  Killarney's woods are some of the last remnants of ancient forests that once covered all of Ireland. The National Park has about 12.2 square kilometres (3,000 acres) of oak woodland. Most of the oak woodlands are located on the lower slopes of the Shehy and Tomy mountains, adjacent to Lough Leane. They are typically dominated by sessile oak (<em>Quercus petraea</em>), which favours the acidic soils of the sandstone mountains.<br /><br />The oak woodlands typically have an understory of holly (<em>Ilex aquifolium</em>). Strawberry trees (<em>Arbutus unedo</em>) are a notable part of these woods. There are also scattered yews. The field layer includes bilberry and woodrush. The herb layer is not rich in species.<br /><br />Bryophytes, lichens and filmy ferns (<em>Hymenophyllaceae</em>), thrive in the humid oceanic climate. Species with restricted Atlantic distributions grow in the woods. The bryophytes in these woods are perhaps the best-developed Atlantic bryophyte community in Europe. Mosses, ferns and liverworts frequently occur as epiphytes, attached to the trunks and branches of oak trees.<br /><br />Keep your eye out for interesting flora and fauna as you continue on the trail.  The tiny Doo Laugh on the right marks a geological divide from limestone to sandstone. Notice how vegetation and tree types change abruptly.",
         "photo": "oak2.jpg"
       }
     },
@@ -45,11 +45,11 @@
         "lon": -9.547415508755638
       },
       "navigate": {
-        "description": "Directions to Brickeen Bridge",
+        "description": "Continue on the cycle path around Muckross Lake.  As you start to round the far end of the lake, you'll come to the old Brickeen Bridge.",
         "photo": "brickeen1.jpg"
       },
       "arrive": {
-        "description": "More info about Brickeen Bridge",
+        "description": "The bridge was built in the gothic style, in the mid 18th century by a member of the local gentry who was a sailing and fishing enthusiast. Brickeen translates into English from Gaelic to mean the 'bridge of the little trout'. Brickeen Bridge joins Dinis island to the mainland. It also separates Muckross Lake from Lough Leane.",
         "photo": "brickeen2.jpg"
       }
     },
@@ -60,11 +60,11 @@
         "lon": -9.548325373330465
       },
       "navigate": {
-        "description": "Directions to Dinis Cottage",
+        "description": "Cross over Brickeen Bridge and onto Dinis Island and continue along the cycle path until you reach the picturesque Dinis Cottage.",
         "photo": "dinis1.jpg"
       },
       "arrive": {
-        "description": "More info about Dinis Cottage",
+        "description": "Dinis Cottage looks out over Muckross Lake and was built by the Herberts, who at one time owned the lands that are now part of Killarney National Park. The cottage has been described as a hunting lodge and a woodcutter's hut and dates back to the 1700s.<br /><br />Some of the graffiti etched on the windows of Dinis Cottage dates back to the 1820s. There was a tradition for newly engaged couples to carve their names, for luck, on the glass windows with their new diamond.<br /><br />Dinis Cottage is open during the summer season and provides a tempting stop-off for the many visitors. The tea room has seating for 33 people inside and there is also outdoors seating, weather permitting. The menu includes light refreshments, tea, coffee, homemade scones and apple pie and freshly made sandwiches.",
         "photo": "dinis2.jpg"
       }
     },
@@ -75,11 +75,11 @@
         "lon": -9.54963721483808
       },
       "navigate": {
-        "description": "Directions to the Meeting of the Waters via Old Weir Bridge",
+        "description": "Immediately after leaving the cottage you cross a little bridge. On your right you will notice signs for the Old Weir Bridge and the Meetings of the Waters.",
         "photo": "owb.jpg"
       },
       "arrive": {
-        "description": "More info about MOW",
+        "description": "The <strong>Old Weir Bridge</strong> is an ancient twin arch bridge made of stone.  The actual age of the bridge is unclear, but believed to date back to the sixteenth century. A 1780 Fisher print of the bridge shows it already had fallen into a state of disrepair by the late 1700s and remained so for at least the next 100 years, until restoration efforts stabilized it.<br /><br />Near the site of the Old Weir Bridge is the <strong>Meetings of the Waters</strong>. As the name suggests, this is the point where all of Killarney's three glorious lakes merge together; the upper lake, Muckross Lake (the middle lake) and Lough Leane (the lower lake). The area is so beautiful, echoing peace and tranquillity in a world of its own.",
         "photo": "mow.jpg"
       }
     },
@@ -90,26 +90,26 @@
         "lon": -9.505399121608729
       },
       "navigate": {
-        "description": "Directions to Torc Waterfall",
+        "description": "Continue on the cycle trail until it ends at the main road. Turn left and beware of vehicles on the main road (not suitable for children). Another 800m brings you to Torc Waterfall. Leave your bike in the car park and hike the short trail to the spectacular, cascading waterfall.",
         "photo": "torc1.jpg"
       },
       "arrive": {
-        "description": "More info about Torc Waterfall",
-        "photo": "torc1.jpg"
+        "description": "Torc Waterfall, at the base of Torc Mountain, is a 20 metres (66 ft) high, 110 metres (360 ft) long cascade waterfall formed by the Owengarriff River as it drains from a deep cirque high above in Mangerton Mountain.<br /><br />The word Torc is from the Gaelic translation of a 'wild boar', and the area is associated with legends involving wild boars. One legend is of a man who was cursed by the Devil to spend each night transformed into a wild boar. But when his secret was revealed by a local farmer, he burst into flames and disappeared into the nearby Devils Punchbowl on Mangerton Mountain, from which the Owengarriff River emerged to hide the entrance to his cave beneath the Torc Waterfall.",
+        "photo": "torc_falls.jpg"
       }
     },
     {
-      "name": "Muckross Lake",
+      "name": "Muckross Lake & Dundag Beach",
       "location": {
         "lat": 52.01294356078978,
         "lon": -9.50931502021884
       },
       "navigate": {
-        "description": "Directions to the beach on Muckross",
+        "description": "From the Torc Waterfall car park, cross the main road and enter the Park through the jaunting car parking area. Continue on this trail towards Muckross House until you come to the side trail to Dundag Beach.",
         "photo": "muckross1.jpg"
       },
       "arrive": {
-        "description": "More info about Muckross Lake",
+        "description": "Muckross Lake, also called Middle Lake, is one of the three main lakes in Killarney. It is Ireland's deepest lake, reaching depths of 75 metres (246 ft) in parts.<br /><br />In Irish folklore, Muckie is the name given to the reported mysterious creature said to inhabit the Lakes of Killarney in Ireland. In 2003, scientists conducted a series of sonar scans to determine local fish populations. However, a large solid object in the water was recorded, which has led to the theory that the lake is inhabited by some form of lake monster, similar to the famed 'Nessie' of Loch Ness. It has been suggested that witnesses might have seen seals, which when travelling in pairs will dive and rise opposite to each other, giving the impression of being a single larger animal.",
         "photo": "muckross2.jpg"
       },
       "pop": true
@@ -121,11 +121,11 @@
         "lon":  -9.504747597460991
       },
       "navigate": {
-        "description": "Directions to Muckross House",
+        "description": "Return back to the main trail and continue to Muckross House",
         "photo": "house1.jpg"
       },
       "arrive": {
-        "description": "More info about Muckross House",
+        "description": "Muckross House is a mansion designed by the British architect, William Burn, built in 1843 for Henry Arthur Herbert and his wife, the watercolourist Mary Balfour Herbert.<br /><br />With sixty-five rooms, it was built in the Tudor style. Extensive improvements were undertaken in the 1850s in preparation for the visit of Queen Victoria in 1861. It is said that these improvements for the Queen's visit were a contributory factor in the financial difficulties suffered by the Herbert family which resulted in the sale of the estate. In 1899 it was bought by Arthur Guinness, 1st Baron Ardilaun who wanted to preserve the dramatic landscape. He did not live in the house himself, but rented it out to wealthy groups as a hunting lodge.<br /><br />In August 1911, not long before the First World War, Muckross House and its demesne were again sold to William Bowers Bourn, a wealthy Californian mining magnate. He and his wife passed it to their daughter Maud and her husband Arthur Rose Vincent as a wedding present. The couple lived there until Maud's death from pneumonia in 1929.<br /><br />In 1932 her parents Mr and Mrs Bourn and their son-in-law Arthur Vincent decided to present Muckross House and its 11,000 acre estate to the Irish nation. Being called the 'Bourn-Vincent Memorial Park', it thus became the first National Park in the Republic of Ireland and formed the basis of present-day Killarney National Park. In later years the park was substantially expanded by the acquisition of land from the former Earl of Kenmare's estate.",
         "photo": "house2.jpg"
       }
     }

@@ -6,8 +6,8 @@
     </div>
     
     <div v-if="isCameraOpen" v-show="!isLoading">
-      <video class="border-2 border-white" v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
-      <canvas class="border-2 border-green-200" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
+      <video class="border-2 border-gray-200" v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
+      <canvas class="border-2 border-green-500" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
     </div>
 
     <div class="max-w-xl px-2 sm:pt-3 fixed bottom-0 right-0" style="z-index: 9999">

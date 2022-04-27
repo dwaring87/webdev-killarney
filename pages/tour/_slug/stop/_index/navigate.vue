@@ -2,11 +2,11 @@
   <div class="tour-container">
     <div class="tour-header">
       <h2>
-        <span v-html="this.stop_index === 1 ? 'First' : 'Next'"></span> Stop:
+        <span v-html="this.stop_index === 0 ? 'First' : 'Next'"></span> Stop:
         <br />
         <span class='text-yellow-500'>{{ stop.name }}</span>
       </h2>
-      <img class="max-w-lg mx-auto m-4 rounded-md border-2 border-gray-100" :src="'/images/' + stop.navigate.photo" />
+      <img class="max-w-full w-lg mx-auto m-4 shadow-lg rounded-md border-2 border-gray-100" :src="'/images/' + stop.navigate.photo" />
     </div>
     <div class="tour-body">
       <p v-html="stop.navigate.description"></p>
