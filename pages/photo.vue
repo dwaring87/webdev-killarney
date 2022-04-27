@@ -44,6 +44,7 @@ export default {
     return {
       id: undefined,
       back: undefined,
+      pop: false,
       isCameraOpen: false,
       isPhotoTaken: false,
       isShotPhoto: false,
@@ -55,6 +56,7 @@ export default {
   mounted: async function() {
     this.id = this.$route.query.id;
     this.back = this.$route.query.back;
+    this.pop = this.$route.query.pop === 'true';
     this.toggleCamera();
   },
   

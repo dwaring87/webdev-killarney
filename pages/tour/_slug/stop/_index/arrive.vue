@@ -14,15 +14,18 @@
       </div>
     </div>
     <template v-if="photo_data && is_last_stop">
-      <TourFooter :link="'/tour/' + this.tour + '/complete'" text="Complete Tour"
-        :link2="'/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive'" text2="Retake Photo" />
+      <TourFooter 
+        :link="'/tour/' + this.tour + '/complete'" text="Complete Tour"
+        :link2="photoUrl" text2="Retake Photo" />
     </template>
     <template v-else-if="photo_data && !is_last_stop">
-      <TourFooter :link="'/tour/' + this.tour + '/stop/' + this.next_stop_index + '/navigate'" text="Next Stop"
-        :link2="'/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive'" text2="Retake Photo" />
+      <TourFooter 
+        :link="'/tour/' + this.tour + '/stop/' + this.next_stop_index + '/navigate'" text="Next Stop"
+        :link2="photoUrl" text2="Retake Photo" />
     </template>
     <template v-else>
-      <TourFooter :link="'/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive'" text="Take Photo" />
+      <TourFooter 
+        :link="photoUrl" text="Take Photo" />
     </template>
   </div>
 </template>
@@ -43,6 +46,19 @@ export default {
       photo_id: 'photo-stop-' + stop_index,
       photo_data: undefined
     }
+  },
+
+  computed: {
+
+    photoUrl: function() {
+      if ( this.stop.pop ) {
+        return '/pop?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive';
+      }
+      else {
+        return '/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive';
+      }
+    }
+
   },
 
   mounted: function() {
