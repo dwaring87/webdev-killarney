@@ -14,7 +14,7 @@
       </p>
       <div class="mt-10 px-10 py-2 w-full mx-auto fixed bottom-0 left-0 flex gap-10">
           <a href="http://www.quickmeme.com/img/1a/1a826f15d0827e96ec9aac47dd08f1a3bead2349ade9aeae2c07985122eedb45.jpg" class="px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">No</a>
-          <NuxtLink :to="photoUrl" class="flex-grow text-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Yes</NuxtLink>
+          <a @click="yes" href="#" class="flex-grow text-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Yes</a>
       </div>
     </div>
   </div>
@@ -41,6 +41,15 @@ export default {
   mounted: async function() {
     this.photo_id = this.$route.query.id;
     this.back = this.$route.query.back;
+  },
+
+  methods: {
+
+    yes: function() {
+      this.$storage.setUniversal('answer', 'yes');
+      window.location = this.photoUrl;
+    }
+
   }
 }
 </script>

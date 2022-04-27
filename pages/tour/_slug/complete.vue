@@ -10,6 +10,12 @@
         <p class="mt-3 text-lg text-gray-300">
           Congratulations {{ name }} on completing the tour!  I hope you enjoyed it and this will be start of a lifetime of exploration and adventure together.
         </p>
+        <div class="relative border-2 border-white rounded-md shadow-md m-4">
+          <div class="absolute bottom-2 right-2">
+            <h2 class="text-xl md:text-lg lg:text-xl text-gray-100 font-semibold uppercase">She said yes!</h2>
+          </div>
+          <img class="h-full w-full object-cover rounded-md" src="/images/marvid.jpg" />
+        </div>
         <div class="mt-8">
           <div class="inline-flex gap-10 rounded-md shadow">
             <NuxtLink :to="'/tour/' + this.tour + '/summary'" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -32,6 +38,7 @@ export default {
     return {
       tour: this.$route.params.slug,
       name: this.$storage.getUniversal('name'),
+      answer: this.$storage.getUniversal('answer'),
       data: require('@/data/' + this.$route.params.slug + '.json')
     }
   },
