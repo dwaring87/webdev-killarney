@@ -4,5 +4,22 @@
     "lat": 52.042609,
     "lon": -9.499515,
     "description": "On the cycle path across the road from the Killarney Bike Rental Company"
-  }
+  },
+  "stops": [
+    {
+      "name": "Muckross Abbey",
+      "location": {
+        "lat": 52.0260917783242,
+        "lon": -9.494660029132469
+      },
+      "navigate": {
+        "description": "Directions to the Abbey",
+        "photo": "abbey1.jpg"
+      },
+      "arrive": {
+        "description": "More detailed description of the Abbey",
+        "photo": "abbey2.jpg"
+      }
+    }
+  ]
 }

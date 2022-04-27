@@ -16,6 +16,9 @@ body {
 .tour-container h2 {
   @apply text-3xl font-extrabold text-white sm:text-4xl;
 }
+.tour-container h3 {
+  @apply text-xl font-bold text-gray-100 sm:text-2xl;
+}
 .tour-container p {
   @apply py-4 text-lg leading-6 text-green-50;
 }
