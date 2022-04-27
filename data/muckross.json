@@ -22,6 +22,112 @@
         "description": "More detailed description of the Abbey",
         "photo": "abbey2.jpg"
       }
+    },
+    {
+      "name": "Killarney Oak Woods",
+      "location": {
+        "lat": 52.02289898932819,
+        "lon": -9.50655252967592
+      },
+      "navigate": {
+        "description": "Directions to the Oak Wood junction",
+        "photo": "oak1.jpg"
+      },
+      "arrive": {
+        "description": "Here the trail divides, stay to the right",
+        "photo": "oak2.jpg"
+      }
+    },
+    {
+      "name": "Brickeen Bridge",
+      "location": {
+        "lat": 52.01519327261427,
+        "lon": -9.547415508755638
+      },
+      "navigate": {
+        "description": "Directions to Brickeen Bridge",
+        "photo": "brickeen1.jpg"
+      },
+      "arrive": {
+        "description": "More info about Brickeen Bridge",
+        "photo": "brickeen2.jpg"
+      }
+    },
+    {
+      "name": "Dinis Cottage",
+      "location": {
+        "lat": 52.009667406897975,
+        "lon": -9.548325373330465
+      },
+      "navigate": {
+        "description": "Directions to Dinis Cottage",
+        "photo": "dinis1.jpg"
+      },
+      "arrive": {
+        "description": "More info about Dinis Cottage",
+        "photo": "dinis2.jpg"
+      }
+    },
+    {
+      "name": "Old Weir Bridge & Meeting of the Waters",
+      "location": {
+        "lat": 52.00857654614571,
+        "lon": -9.54963721483808
+      },
+      "navigate": {
+        "description": "Directions to the Meeting of the Waters via Old Weir Bridge",
+        "photo": "owb.jpg"
+      },
+      "arrive": {
+        "description": "More info about MOW",
+        "photo": "mow.jpg"
+      }
+    },
+    {
+      "name": "Torc Waterfall",
+      "location": {
+        "lat": 52.003285646699105,
+        "lon": -9.505399121608729
+      },
+      "navigate": {
+        "description": "Directions to Torc Waterfall",
+        "photo": "torc1.jpg"
+      },
+      "arrive": {
+        "description": "More info about Torc Waterfall",
+        "photo": "torc1.jpg"
+      }
+    },
+    {
+      "name": "Muckross Lake",
+      "location": {
+        "lat": 52.01294356078978,
+        "lon": -9.50931502021884
+      },
+      "navigate": {
+        "description": "Directions to the beach on Muckross",
+        "photo": "muckross1.jpg"
+      },
+      "arrive": {
+        "description": "More info about Muckross Lake",
+        "photo": "muckross2.jpg"
+      },
+      "pop": true
+    },
+    {
+      "name": "Muckross House",
+      "location": {
+        "lat": 52.018816712637744,
+        "lon":  -9.504747597460991
+      },
+      "navigate": {
+        "description": "Directions to Muckross House",
+        "photo": "house1.jpg"
+      },
+      "arrive": {
+        "description": "More info about Muckross House",
+        "photo": "house2.jpg"
+      }
     }
   ]
 }

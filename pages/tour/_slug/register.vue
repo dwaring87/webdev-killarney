@@ -80,7 +80,7 @@ export default {
       tour: this.$route.params.slug,
       name: this.$storage.getUniversal('name'),
       description: this.$storage.getUniversal('description'),
-      size: this.$storage.getUniversal('size') || 1,
+      size: this.$storage.getUniversal('size'),
       email: this.$storage.getUniversal('email'),
       error: undefined
     }

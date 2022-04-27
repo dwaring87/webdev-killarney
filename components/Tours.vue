@@ -36,6 +36,19 @@
             <p><strong>Tour Length:</strong> 16 km</p>
             <p><strong>Tour Duration:</strong> about 2 hours</p>
             <p><strong>Start Point:</strong> Killarney Bike Rental Company</p>
+            <p>
+              <strong>Stops:</strong>
+              <ul class="ml-8">
+                <li>Muckross Abbey</li>
+                <li>Killarney Oak Woods</li>
+                <li>Brickeen Bridge</li>
+                <li>Dinis Cottage</li>
+                <li>Old Weir Bridge &amp; Meeting of the Waters</li>
+                <li>Torc Waterfall</li>
+                <li>Muckross Lake</li>
+                <li>Muckross House</li>
+              </ul>
+            </p>
             <br /><br />
             <NuxtLink class="btn" to="/tour/muckross/register">
               <i class="ri-play-circle-line"></i>&nbsp;&nbsp;Start Tour
