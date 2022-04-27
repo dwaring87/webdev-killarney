@@ -1,16 +1,16 @@
 <template>
-  <div class="bg-green-800 w-full h-screen">
+  <div class="bg-gray-800 w-full h-screen">
     
     <div v-show="isCameraOpen && isLoading">
       <p class="text-gray-200">Loading...</p>
     </div>
     
     <div v-if="isCameraOpen" v-show="!isLoading" style="width: 450px">
-      <video class="border-2 border-gray-200" v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
-      <canvas class="border-2 border-green-500" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
+      <video class="border-2 border-gray-200 max-w-screen max-h-screen" v-show="!isPhotoTaken" ref="camera" autoplay></video>
+      <canvas class="border-2 border-green-500 max-w-screen max-h-screen" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
     </div>
 
-    <div class="max-w-xl px-2 sm:pt-3 fixed bottom-0 right-0" style="z-index: 9999">
+    <div class="max-w-xl px-2 sm:pt-3 fixed top-0 left-0" style="z-index: 9999">
         <div class="mx-auto flex gap-2">
           <div v-if="!this.isCameraOpen">
             <a href="#" class="btn" @click="toggleCamera">
@@ -18,14 +18,14 @@
               <span v-else>Close Camera</span>
             </a>
           </div>
-          <div v-if="isPhotoTaken && isCameraOpen">
-            <a href="#" class="btn" @click="downloadImage">
-              <i class="ri-save-3-fill"></i>
+          <div v-if="isCameraOpen && !isLoading">
+            <a href="#" class="btn-camera" @click="takePhoto">
+              <i class="ri-camera-fill"></i>
             </a>
           </div>
-          <div v-if="isCameraOpen && !isLoading">
-            <a href="#" class="btn" @click="takePhoto">
-              <i class="ri-camera-fill"></i>
+          <div v-if="isPhotoTaken && isCameraOpen">
+            <a href="#" class="btn-camera" @click="downloadImage">
+              <i class="ri-save-3-fill"></i>
             </a>
           </div>
         </div>
