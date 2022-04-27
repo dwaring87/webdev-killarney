@@ -10,7 +10,7 @@
       <canvas class="border-2 border-green-200" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
     </div>
 
-    <div class="px-2 sm:pt-3 fixed bottom-0 right-0" style="z-index: 9999">
+    <div class="max-w-xl px-2 sm:pt-3 fixed bottom-0 right-0" style="z-index: 9999">
         <div class="mx-auto flex gap-2">
           <div v-if="!this.isCameraOpen">
             <a href="#" class="btn" @click="toggleCamera">

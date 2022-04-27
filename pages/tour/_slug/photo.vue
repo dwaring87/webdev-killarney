@@ -5,9 +5,9 @@
       <p>Before we get started on finding our first stop, let's take a group photo!</p>
       <p>Gather everyone in your group together to commemorate the beginning of your Killarney National Park exploration.  Hopefully, this is just the start of many adventures together.</p>
     </div>
-    <div class="tour-body" v-if="photo_data">
+    <div class="tour-header" v-if="photo_data">
       <h3>{{ name }} Group Photo</h3>
-      <img :src="photo_data" />
+      <img class="mx-auto" :src="photo_data" />
     </div>
     <template v-if="photo_data">
       <TourFooter :link="'/tour/' + this.tour + '/stop/1/navigate'" text="Continue"

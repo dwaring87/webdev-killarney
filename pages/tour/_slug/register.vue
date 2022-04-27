@@ -49,25 +49,24 @@
               </div>
 
             </form>
+
+            <div class="mx-auto mt-12 p-2">
+              <div v-if="error" class="max-w-sm mx-auto rounded-md border-2 border-red-800 bg-red-50 p-4 m-4">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <i class="ri-error-warning-fill text-red-800"></i>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-red-800">{{ error }}</h3>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn" @click="register">Start Tour</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="max-w-5xl mx-auto my-12 p-2">
-      <div v-if="error" class="max-w-xl mx-auto rounded-md border-2 border-red-800 bg-red-50 p-4 m-4">
-        <div class="flex">
-          <div class="flex-shrink-0">
-            <i class="ri-error-warning-fill text-red-800"></i>
-          </div>
-          <div class="ml-3">
-            <h3 class="text-sm font-medium text-red-800">{{ error }}</h3>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn" @click="register">Start Tour</a>
-    </div>
-
   </div>
 </template>
 

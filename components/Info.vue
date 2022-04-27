@@ -58,7 +58,9 @@
             <p class="mt-4 text-base text-gray-500">Choose a tour, gather at the starting point, and let us guide you to some of Killarney's best attractions!</p>
           </div>
           <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-            <a href="/tours" class="text-base font-medium text-green-700 hover:text-green-600">Choose a Tour<span aria-hidden="true"> &rarr;</span></a>
+            <NuxtLink to="/tours" class="text-base font-medium text-green-700 hover:text-green-600">
+              Choose a Tour<span aria-hidden="true"> &rarr;</span>
+            </NuxtLink>
           </div>
         </div>
       </div>

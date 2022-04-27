@@ -6,12 +6,18 @@
     </div>
     <div class="tour-body">
       <p v-html="stop.arrive.description"></p>
+    </div>
+    <div class="tour-header">
       <div v-if="photo_data" class="mt-2">
-        <h3>{{ name }} Group Photo</h3>
-        <img :src="photo_data" />
+        <h3>{{ name }} at {{ stop.name }}</h3>
+        <img class="mx-auto" :src="photo_data" />
       </div>
     </div>
-    <template v-if="photo_data">
+    <template v-if="photo_data && is_last_stop">
+      <TourFooter :link="'/tour/' + this.tour + '/complete'" text="Complete Tour"
+        :link2="'/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive'" text2="Retake Photo" />
+    </template>
+    <template v-else-if="photo_data && !is_last_stop">
       <TourFooter :link="'/tour/' + this.tour + '/stop/' + this.next_stop_index + '/navigate'" text="Next Stop"
         :link2="'/photo?id=' + this.photo_id + '&back=/tour/' + this.tour + '/stop/' + this.stop_index + '/arrive'" text2="Retake Photo" />
     </template>
@@ -27,12 +33,12 @@ export default {
   data: function() {
     let stops = require('@/data/' + this.$route.params.slug + '.json').stops;
     let stop_index = parseInt(this.$route.params.index);
-    let next_stop_index = stop_index + 1;
     return {
       tour: this.$route.params.slug,
       name: this.$storage.getUniversal('name'),
       stop_index: stop_index,
-      next_stop_index: next_stop_index,
+      next_stop_index: stop_index + 1,
+      is_last_stop: stop_index === stops.length,
       stop: stops[stop_index-1],
       photo_id: 'photo-stop-' + stop_index,
       photo_data: undefined

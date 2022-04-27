@@ -1,0 +1,41 @@
+<template>
+  <div class="bg-gray-800">
+    <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+      <img class="w-full h-full object-cover" :src="'/images/' + data.photo" alt="">
+    </div>
+    <div class="h-full min-h-screen max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <div class="md:ml-auto md:w-1/2 md:pl-10">
+        <h2 class="text-base font-semibold uppercase tracking-wider text-gray-300">{{ data.name }}</h2>
+        <p class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">Tour Complete</p>
+        <p class="mt-3 text-lg text-gray-300">
+          Congratulations {{ name }} on completing the tour!  I hope you enjoyed it and this will be start of a lifetime of exploration and adventure together.
+        </p>
+        <div class="mt-8">
+          <div class="inline-flex rounded-md shadow">
+            <NuxtLink to="/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+              <i class='ri-arrow-go-back-fill'></i>&nbsp;&nbsp;Return to Home Page
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+
+  data: function() {
+    return {
+      tour: this.$route.params.slug,
+      name: this.$storage.getUniversal('name'),
+      data: require('@/data/' + this.$route.params.slug + '.json')
+    }
+  },
+
+  mounted: function() {
+    this.$storage.removeUniversal('page');
+  }
+
+}
+</script>

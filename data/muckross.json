@@ -1,5 +1,7 @@
 {
   "name": "Muckross House",
+  "key": "muckross",
+  "photo": "muckross.jpg",
   "start": {
     "lat": 52.042609,
     "lon": -9.499515,

@@ -37,9 +37,9 @@
             <p><strong>Tour Duration:</strong> about 2 hours</p>
             <p><strong>Start Point:</strong> Killarney Bike Rental Company</p>
             <br /><br />
-            <a class="btn" href="/tour/muckross/register">
+            <NuxtLink class="btn" to="/tour/muckross/register">
               <i class="ri-play-circle-line"></i>&nbsp;&nbsp;Start Tour
-            </a>
+            </NuxtLink>
           </div>
         </div>
         <div class="max-w-5xl">
@@ -64,7 +64,7 @@
           <form class="sm:flex">
             <label for="email-address" class="sr-only">Email address</label>
             <input id="email-address" name="email-address" type="email" autocomplete="email" required class="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-800 focus:ring-white rounded-md" placeholder="Enter your email">
-            <button type="submit" class="btn">Notify me</button>
+            <button type="submit" class="btn" click="javascript:alert('Thank you for subscribing!')">Notify me</button>
           </form>
           <p class="mt-3 text-sm text-green-100">
             We care about the protection of your data. Your email address will not be shared with any third parties.
