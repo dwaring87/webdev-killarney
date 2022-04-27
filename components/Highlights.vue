@@ -2,6 +2,10 @@
   <div class="max-w-7xl mx-auto mb-12">
     <div class="max-w-5xl px-4 mx-auto">
 
+      <div class="bg-green-800 text-gray-200 rounded-md shadow-md p-4 mt-4 md:mt-0 text-center">
+        <p class="text-xl md:text-2xl"><i class="ri-group-2-fill"></i>&nbsp;&nbsp;David and Marissa are getting married!</p>
+      </div>
+
       <div class="flex flex-wrap justify-between items-center my-6">
         <img src="/images/cycle2.jpg" class="rounded-lg mx-auto max-w-full sm:max-w-12 lg:max-w-md" />
         <div class="lg:max-w-md">
@@ -41,3 +45,14 @@
     </div>
   </div>
 </template>
+
+
+<script>
+export default {
+  data: function() {
+    return {
+      yes: this.$storage.getUniversal('answer') === 'yes',
+    }
+  }
+}
+</script>
