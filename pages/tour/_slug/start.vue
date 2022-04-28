@@ -22,13 +22,13 @@ export default {
   data: function() {
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getLocalStorage('name'),
+      name: this.$storage.getUniversal('name'),
       data: require('@/data/' + this.$route.params.slug + '.json')
     }
   },
 
   mounted: function() {
-    this.$storage.setLocalStorage('page', this.$route.path);
+    this.$storage.setUniversal('page', this.$route.path);
   }
 
 }

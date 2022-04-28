@@ -25,7 +25,7 @@
 export default {
   data: function() {
     return {
-      page: this.$storage.getLocalStorage('page'),
+      page: this.$storage.getUniversal('page'),
     }
   }
 }

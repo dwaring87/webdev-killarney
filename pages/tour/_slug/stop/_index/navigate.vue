@@ -23,14 +23,14 @@ export default {
   data: function() {
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getLocalStorage('name'),
+      name: this.$storage.getUniversal('name'),
       stop_index: parseInt(this.$route.params.index),
       stop: require('@/data/' + this.$route.params.slug + '.json').stops[this.$route.params.index]
     }
   },
 
   mounted: function() {
-    this.$storage.setLocalStorage('page', this.$route.path);
+    this.$storage.setUniversal('page', this.$route.path);
   }
 
 }

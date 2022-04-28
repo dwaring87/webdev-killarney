@@ -39,13 +39,13 @@ export default {
   mounted: async function() {
     this.photo_id = this.$route.query.id;
     this.back = this.$route.query.back;
-    this.$storage.setLocalStorage('answer', 'yes');
+    this.$storage.setUniversal('answer', 'yes');
   },
 
   methods: {
 
     yes: function() {
-      this.$storage.setLocalStorage('answer', 'yes');
+      this.$storage.setUniversal('answer', 'yes');
       window.location = this.photoUrl;
     }
 

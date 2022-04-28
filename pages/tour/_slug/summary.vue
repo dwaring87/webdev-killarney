@@ -25,7 +25,7 @@ export default {
   data: function() {
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getLocalStorage('name'),
+      name: this.$storage.getUniversal('name'),
       data: require('@/data/' + this.$route.params.slug + '.json')
     }
   },
@@ -33,17 +33,17 @@ export default {
   methods: {
 
     getGroupPhoto() {
-      return this.$storage.getLocalStorage('photo-group');
+      return this.$storage.getUniversal('photo-group');
     },
 
     getPhoto: function(index) {
-      return this.$storage.getLocalStorage('photo-stop-' + index);
+      return this.$storage.getUniversal('photo-stop-' + index);
     }
 
   },
 
   mounted: function() {
-    this.$storage.removeLocalStorage('page');
+    this.$storage.removeUniversal('page');
   }
 
 }
