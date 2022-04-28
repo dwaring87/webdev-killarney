@@ -2,11 +2,11 @@
   <div class="bg-gray-50 w-full min-h-screen h-full">
     
     <div v-show="isCameraOpen && isLoading">
-      <p class="text-gray-200">Loading...</p>
+      <p class="text-gray-800">Loading...</p>
     </div>
     
     <div v-if="isCameraOpen" v-show="!isLoading">
-      <video class="border-2 border-gray-200 max-w-screen max-h-screen" v-show="!isPhotoTaken" ref="camera" autoplay></video>
+      <video class="max-w-screen max-h-screen" v-show="!isPhotoTaken" ref="camera" autoplay></video>
       <canvas class="border-2 border-green-500 max-w-screen max-h-screen" v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
     </div>
 
