@@ -46,7 +46,7 @@ export default {
   methods: {
 
     yes: function() {
-      this.$storage.setUniversal('answer', 'yes');
+      this.$storage.setLocalStorage('answer', 'yes');
       window.location = this.photoUrl;
     }
 

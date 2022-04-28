@@ -78,10 +78,10 @@ export default {
   data: function() {
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getUniversal('name'),
-      description: this.$storage.getUniversal('description'),
-      size: this.$storage.getUniversal('size'),
-      email: this.$storage.getUniversal('email'),
+      name: this.$storage.getLocalStorage('name'),
+      description: this.$storage.getLocalStorage('description'),
+      size: this.$storage.getLocalStorage('size'),
+      email: this.$storage.getLocalStorage('email'),
       error: undefined
     }
   },
@@ -104,10 +104,10 @@ export default {
         return false;
       }
 
-      this.$storage.setUniversal('name', this.name);
-      this.$storage.setUniversal('description', this.description);
-      this.$storage.setUniversal('size', this.size);
-      this.$storage.setUniversal('email', this.email);
+      this.$storage.setLocalStorage('name', this.name);
+      this.$storage.setLocalStorage('description', this.description);
+      this.$storage.setLocalStorage('size', this.size);
+      this.$storage.setLocalStorage('email', this.email);
       
       window.location = "/tour/" + this.tour + "/start";
 

@@ -25,7 +25,7 @@ export default {
 
   data: function() {
     return {
-      name: this.$storage.getUniversal('name'),
+      name: this.$storage.getLocalStorage('name'),
       photo_id: "photo-group",
       photo_data: undefined,
       tour: this.$route.params.slug
@@ -33,8 +33,8 @@ export default {
   },
 
   mounted: function() {
-    this.$storage.setUniversal('page', this.$route.path);
-    this.photo_data = this.$storage.getUniversal(this.photo_id);
+    this.$storage.setLocalStorage('page', this.$route.path);
+    this.photo_data = this.$storage.getLocalStorage(this.photo_id);
   }
 
 }

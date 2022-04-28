@@ -45,14 +45,14 @@ export default {
   data: function() {
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getUniversal('name'),
-      yes: this.$storage.getUniversal('answer') === 'yes',
+      name: this.$storage.getLocalStorage('name'),
+      yes: this.$storage.getLocalStorage('answer') === 'yes',
       data: require('@/data/' + this.$route.params.slug + '.json')
     }
   },
 
   mounted: function() {
-    this.$storage.removeUniversal('page');
+    this.$storage.removeLocalStorage('page');
   }
 
 }

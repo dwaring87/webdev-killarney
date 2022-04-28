@@ -39,7 +39,7 @@ export default {
     let stop = stops[stop_index];
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getUniversal('name'),
+      name: this.$storage.getLocalStorage('name'),
       stop_index: stop_index,
       next_stop_index: stop_index + 1,
       is_last_stop: stop_index === stops.length-1,
@@ -63,8 +63,8 @@ export default {
   },
 
   mounted: function() {
-    this.$storage.setUniversal('page', this.$route.path);
-    this.photo_data = this.$storage.getUniversal(this.photo_id);
+    this.$storage.setLocalStorage('page', this.$route.path);
+    this.photo_data = this.$storage.getLocalStorage(this.photo_id);
   }
 
 }
