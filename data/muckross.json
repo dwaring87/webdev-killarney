@@ -15,22 +15,22 @@
         "lon": -9.494660029132469
       },
       "navigate": {
-        "description": "Continue along the cycle path away from the town centre.  The path will pass through a wooded area as it enters the National Park.  You'll soon pass through meadows with fine views of <strong>Lough Lein</strong> (Killarney's largest lake) on your right.  Your first stop will be <strong>Muckross Abbey</strong>, the ruins of a Franciscan friary.  You'll see the church and its cemetary on the left.  At the Y-junction turn left for about 200 yards to the Abbey.",
+        "description": "Continue along the cycle path away from the town centre.  The path will pass through a wooded area as it enters the National Park.  You'll soon pass through meadows with fine views of <strong>Lough Leane</strong> (Killarney's largest lake) on your right.  Your first stop will be <strong>Muckross Abbey</strong>, the ruins of a Franciscan friary.  You'll see the church and its cemetary on the left.  At the Y-junction turn left for about 200 yards to the Abbey.",
         "photo": "abbey1.jpg"
       },
       "arrive": {
-        "description": "The Franciscan friary of Irrelagh, now known as <strong>Muckross Abbey</strong> was founded for the Observatine Franciscans about 1448 by Daniel McCarthy Mor. The friars remained in occupation at Muckross at least intermittently and despite the dissolution of the monasteries until Cromwellian times. The present well-preserved ruins include a church with a wide, square tower and fine windows, and a vaulted cloister with an arcade of arches around a square courtyard. In the middle of the courtyard grows an ancient yew tree, said traditionally to be as old as the Abbey. Muckross Abbey was the burial place of local chieftains, and in the 17th and 18th centuries, the three Gaelic poets, Geoffrey O'Donoghue, Aodhagan O'Rathaille and Eoghan Rua O'Suilleabhain. The graveyard in the grounds surrounding the Abbey is still in use with a number of burials there each year.<br /><br />It's rumored that several monks were murdered when the abbey was looted and burnt by Cromwellian soldiers in 1652. A mysterious hermit lived for many years in the upstairs kitchen. History, intrigue, scary bits - it's all here.",
+        "description": "The Franciscan friary of Irrelagh, now known as <strong>Muckross Abbey</strong> was founded for the Observatine Franciscans about 1448 by Daniel McCarthy Mor. The friars remained in occupation at Muckross at least intermittently and despite the dissolution of the monasteries until Cromwellian times.<br /><br />The present well-preserved ruins include a church with a wide, square tower and fine windows, and a vaulted cloister with an arcade of arches around a square courtyard. In the middle of the courtyard grows an ancient yew tree, said traditionally to be as old as the Abbey. Muckross Abbey was the burial place of local chieftains, and in the 17th and 18th centuries, the three Gaelic poets, Geoffrey O'Donoghue, Aodhagan O'Rathaille and Eoghan Rua O'Suilleabhain. The graveyard in the grounds surrounding the Abbey is still in use with a number of burials there each year.<br /><br />It's rumored that several monks were murdered when the abbey was looted and burnt by Cromwellian soldiers in 1652. A mysterious hermit lived for many years in the upstairs kitchen. History, intrigue, scary bits - it's all here.",
         "photo": "abbey2.jpg"
       }
     },
     {
       "name": "Killarney Oak Woods",
       "location": {
-        "lat": 52.02289898932819,
-        "lon": -9.50655252967592
+        "lat": 52.020627296131224,
+        "lon": -9.509838458172823
       },
       "navigate": {
-        "description": "After touring the Abbey, make your way back to the Y-junction and continue on your route.  At the next junction, take the trail to the right. Here begins the Natural Zone of the park, the realm of native woods and deer.",
+        "description": "After touring the Abbey, make your way back to the Y-junction and continue on your route.  At the next junction, take the trail to the right.  At this point you might catch glimpes of the elegant Muckross House - don't be tempted to visit it at this point as we will be closer to it on the return journey.<br /><br />As you pass the boathouse, here begins the Natural Zone of the park - the realm of native woods and Ireland's last herd of native red deer.",
         "photo": "oak1.jpg"
       },
       "arrive": {
@@ -49,7 +49,7 @@
         "photo": "brickeen1.jpg"
       },
       "arrive": {
-        "description": "The bridge was built in the gothic style, in the mid 18th century by a member of the local gentry who was a sailing and fishing enthusiast. Brickeen translates into English from Gaelic to mean the 'bridge of the little trout'. Brickeen Bridge joins Dinis island to the mainland. It also separates Muckross Lake from Lough Leane.",
+        "description": "The bridge was built in the gothic style, in the mid 18th century by a member of the local gentry who was a sailing and fishing enthusiast. Brickeen translates into English from Gaelic to mean the 'bridge of the little trout'. Brickeen Bridge joins Dinis Island to the mainland. It also separates Muckross Lake from Lough Leane.<br /><br />This bridge serves as an important symbol in local tradition, particularly among young couples.  The bridge serves as a connection between two worlds - a permanent feature uniting the two.  The stability and strength of a bridge, particulary one as old as Brickeen, reminds us of the importance of unity.",
         "photo": "brickeen2.jpg"
       }
     },
@@ -64,7 +64,7 @@
         "photo": "dinis1.jpg"
       },
       "arrive": {
-        "description": "Dinis Cottage looks out over Muckross Lake and was built by the Herberts, who at one time owned the lands that are now part of Killarney National Park. The cottage has been described as a hunting lodge and a woodcutter's hut and dates back to the 1700s.<br /><br />Some of the graffiti etched on the windows of Dinis Cottage dates back to the 1820s. There was a tradition for newly engaged couples to carve their names, for luck, on the glass windows with their new diamond.<br /><br />Dinis Cottage is open during the summer season and provides a tempting stop-off for the many visitors. The tea room has seating for 33 people inside and there is also outdoors seating, weather permitting. The menu includes light refreshments, tea, coffee, homemade scones and apple pie and freshly made sandwiches.",
+        "description": "Dinis Cottage looks out over Muckross Lake and was built by the Herberts, who at one time owned the lands that are now part of Killarney National Park. The cottage has been described as a hunting lodge and a woodcutter's hut and dates back to the 1700s.<br /><br />Some of the graffiti etched on the windows of Dinis Cottage dates back to the 1820s. There was a tradition for newly engaged couples to carve their names on the glass windows with their new diamond.  This was done partly as a gesture of good luck, but also to ensure their diamond was genuine!<br /><br />Dinis Cottage is open during the summer season and provides a tempting stop-off for the many visitors. The tea room has seating for 33 people inside and there is also outdoors seating, weather permitting. The menu includes light refreshments, tea, coffee, homemade scones and apple pie and freshly made sandwiches.",
         "photo": "dinis2.jpg"
       }
     },
@@ -75,11 +75,11 @@
         "lon": -9.54963721483808
       },
       "navigate": {
-        "description": "Immediately after leaving the cottage you cross a little bridge. On your right you will notice signs for the Old Weir Bridge and the Meetings of the Waters.",
+        "description": "Immediately after leaving the cottage you cross a little bridge. On your right you will notice signs for the Old Weir Bridge and the Meetings of the Waters.<br /><br />It's worth walking the short distance from the main trail to visit this historic site.",
         "photo": "owb.jpg"
       },
       "arrive": {
-        "description": "The <strong>Old Weir Bridge</strong> is an ancient twin arch bridge made of stone.  The actual age of the bridge is unclear, but believed to date back to the sixteenth century. A 1780 Fisher print of the bridge shows it already had fallen into a state of disrepair by the late 1700s and remained so for at least the next 100 years, until restoration efforts stabilized it.<br /><br />Near the site of the Old Weir Bridge is the <strong>Meetings of the Waters</strong>. As the name suggests, this is the point where all of Killarney's three glorious lakes merge together; the upper lake, Muckross Lake (the middle lake) and Lough Leane (the lower lake). The area is so beautiful, echoing peace and tranquillity in a world of its own.",
+        "description": "The <strong>Old Weir Bridge</strong> is an ancient twin arch bridge made of stone.  The actual age of the bridge is unclear, but believed to date back to the sixteenth century. A 1780 Fisher print of the bridge shows it already had fallen into a state of disrepair by the late 1700s and remained so for at least the next 100 years, until restoration efforts stabilized it.<br /><br />Near the site of the Old Weir Bridge is the <strong>Meetings of the Waters</strong>. As the name suggests, this is the point where all of Killarney's three spectacular lakes merge together; the upper lake, Muckross Lake (the middle lake) and Lough Leane (the lower lake). The area is so beautiful, echoing peace and tranquillity in a world of its own.",
         "photo": "mow.jpg"
       }
     },
@@ -90,7 +90,7 @@
         "lon": -9.505399121608729
       },
       "navigate": {
-        "description": "Continue on the cycle trail until it ends at the main road. Turn left and beware of vehicles on the main road (not suitable for children). Another 800m brings you to Torc Waterfall. Leave your bike in the car park and hike the short trail to the spectacular, cascading waterfall.",
+        "description": "Continue on the cycle trail until it ends at the main road. Turn left and continue along the main road - beware of vehicles on this busy stretch of road. Another 800m brings you to Torc Waterfall. Leave your bike in the car park and hike the short trail to this spectacular, cascading waterfall.",
         "photo": "torc1.jpg"
       },
       "arrive": {
@@ -109,7 +109,7 @@
         "photo": "muckross1.jpg"
       },
       "arrive": {
-        "description": "Muckross Lake, also called Middle Lake, is one of the three main lakes in Killarney. It is Ireland's deepest lake, reaching depths of 75 metres (246 ft) in parts.<br /><br />In Irish folklore, Muckie is the name given to the reported mysterious creature said to inhabit the Lakes of Killarney in Ireland. In 2003, scientists conducted a series of sonar scans to determine local fish populations. However, a large solid object in the water was recorded, which has led to the theory that the lake is inhabited by some form of lake monster, similar to the famed 'Nessie' of Loch Ness. It has been suggested that witnesses might have seen seals, which when travelling in pairs will dive and rise opposite to each other, giving the impression of being a single larger animal.",
+        "description": "Muckross Lake, also called Middle Lake, is one of the three main lakes in Killarney. It is Ireland's deepest lake, reaching depths of 75 metres (246 ft) in parts.<br /><br />In Irish folklore, Muckie is the name given to the reported mysterious creature said to inhabit the Lakes of Killarney in Ireland. In 2003, scientists conducted a series of sonar scans to determine local fish populations. However, a large solid object in the water was recorded, which has led to the theory that the lake is inhabited by some form of lake monster, similar to the famed 'Nessie' of Loch Ness.<br /><br />It has been suggested that witnesses might have seen seals, which when travelling in pairs will dive and rise opposite to each other, giving the impression of being a single larger animal.  This just shows the impact two working as one can have!",
         "photo": "muckross2.jpg"
       },
       "pop": true
@@ -121,7 +121,7 @@
         "lon":  -9.504747597460991
       },
       "navigate": {
-        "description": "Return back to the main trail and continue to Muckross House",
+        "description": "Return back to the main trail and continue to your last stop - the elegant Muckross House.",
         "photo": "house1.jpg"
       },
       "arrive": {

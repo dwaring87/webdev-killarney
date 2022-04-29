@@ -13,7 +13,7 @@
         I can't fathom anyone else I'd rather spend my life exploring the world with.  You've brought me so much joy and happiness and I can't imagine my life without you in it. I love you so much!
       </p>
       <div class="mt-10 px-10 py-2 w-full mx-auto fixed bottom-0 left-0 flex gap-10">
-          <a href="http://www.quickmeme.com/img/1a/1a826f15d0827e96ec9aac47dd08f1a3bead2349ade9aeae2c07985122eedb45.jpg" class="px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">No</a>
+          <a href="/images/no.jpg" class="px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">No</a>
           <NuxtLink :to="yesUrl" class="flex-grow text-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Yes</NuxtLink>
       </div>
     </div>

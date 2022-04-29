@@ -10,7 +10,7 @@
     <div class="tour-header">
       <div v-if="photo_data" class="mt-2">
         <h3 class="mb-2">{{ name }} at {{ stop.name }}</h3>
-        <img class="mx-auto border-2 border-gray-100 shadow-md rounded-md" :src="photo_data" />
+        <img class="mx-auto rounded-md shadow-md border-2 border-gray-100" :src="photo_data" />
       </div>
     </div>
     <template v-if="photo_data && is_last_stop">
@@ -25,7 +25,7 @@
     </template>
     <template v-else>
       <TourFooter 
-        :link="photoUrl" text="Take Photo" />
+        :link="photoUrl" text="Take Group Photo" />
     </template>
   </div>
 </template>

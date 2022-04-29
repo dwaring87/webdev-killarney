@@ -1,10 +1,10 @@
 <template>
   <div class="bg-gray-50">
     <NavBar />
-    <Continue />
-    <Hero />
-    <Highlights />
-    <Info />
+    <HomeContinue />
+    <HomeHero />
+    <HomeHighlights />
+    <HomeInfo />
     <Footer />
   </div>
 </template>
