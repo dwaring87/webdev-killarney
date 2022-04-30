@@ -20,11 +20,11 @@
 
         <div class="flex flex-wrap justify-between items-start m-8">
           <div class="mb-4 mx-auto">
-            <img src="/images/muckross.jpg" class="rounded-lg mx-auto max-w-sm sm:max-w-12 lg:max-w-md" />
+            <img src="/images/muckross.jpg" class="rounded-lg mx-auto w-sm max-w-full sm:max-w-12 lg:max-w-md" />
             <br />
-            <img src="/images/old_weir_bridge.jpg" class="rounded-lg mx-auto max-w-sm sm:max-w-12 lg:max-w-md" />
+            <img src="/images/old_weir_bridge.jpg" class="rounded-lg mx-auto w-sm max-w-full sm:max-w-12 lg:max-w-md" />
             <br />
-            <img src="/images/torc_falls.jpg" class="rounded-lg mx-auto max-w-sm sm:max-w-12 lg:max-w-md" />
+            <img src="/images/torc_falls.jpg" class="rounded-lg mx-auto w-sm max-w-full sm:max-w-12 lg:max-w-md" />
           </div>
           <div class="lg:max-w-md">
             <p>
