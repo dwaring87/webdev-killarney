@@ -7,6 +7,9 @@
     <div class="tour-body">
       <p v-html="stop.arrive.description"></p>
     </div>
+    <div class="tour-body">
+      <Pop />
+    </div>
     <div class="tour-header">
       <div v-if="photo_data" class="mt-2">
         <h3 class="mb-2">{{ name }} at {{ stop.name }}</h3>
@@ -64,7 +67,7 @@ export default {
 
   mounted: function() {
     this.$storage.setUniversal('page', this.$route.path);
-    this.photo_data = this.$storage.getUniversal(this.photo_id);
+    this.photo_data = this.$storage.getUniversal(this.photo_id) || `/images/marvid/${this.photo_id}.jpg`;
   }
 
 }

@@ -51,7 +51,7 @@
 export default {
   data: function() {
     return {
-      yes: this.$storage.getUniversal('answer') === 'yes',
+      yes: (this.$storage.getUniversal('answer') === 'yes') || true,
     }
   }
 }

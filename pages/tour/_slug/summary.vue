@@ -33,11 +33,11 @@ export default {
   methods: {
 
     getGroupPhoto() {
-      return this.$storage.getUniversal('photo-group');
+      return this.$storage.getUniversal('photo-group') || `/images/marvid/photo-group.jpg`;
     },
 
     getPhoto: function(index) {
-      return this.$storage.getUniversal('photo-stop-' + index);
+      return this.$storage.getUniversal('photo-stop-' + index) || `/images/marvid/photo-stop-${index}.jpg`;
     }
 
   },

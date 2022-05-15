@@ -35,7 +35,7 @@ export default {
 
   mounted: function() {
     this.$storage.setUniversal('page', this.$route.path);
-    this.photo_data = this.$storage.getUniversal(this.photo_id);
+    this.photo_data = this.$storage.getUniversal(this.photo_id) || `/images/marvid/${this.photo_id}.jpg`;
   }
 
 }

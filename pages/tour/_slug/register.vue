@@ -78,10 +78,10 @@ export default {
   data: function() {
     return {
       tour: this.$route.params.slug,
-      name: this.$storage.getUniversal('name'),
-      description: this.$storage.getUniversal('description'),
-      size: this.$storage.getUniversal('size'),
-      email: this.$storage.getUniversal('email'),
+      name: this.$storage.getUniversal('name') || 'Marvid',
+      description: this.$storage.getUniversal('description') || 'We\'re a couple of cool plant lovers from NY hoping to see some cool plants, animals, and waterfalls',
+      size: this.$storage.getUniversal('size') || 2,
+      email: this.$storage.getUniversal('email') || 'you@example.com',
       error: undefined
     }
   },
