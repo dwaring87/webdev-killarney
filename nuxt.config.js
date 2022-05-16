@@ -4,6 +4,32 @@ export default {
 
   target: 'static',
 
+  generate: {
+    routes: function() {
+      let paths = [];
+      const tours = ['muckross'];
+      for ( let i = 0; i < tours.length; i++ ) {
+        let tour = tours[i];
+        const data = require(`./data/${tour}.json`);
+        paths = paths.concat([
+          `/tour/${tour}/`,
+          `/tour/${tour}/complete/`,
+          `/tour/${tour}/photo/`,
+          `/tour/${tour}/register/`,
+          `/tour/${tour}/start/`,
+          `/tour/${tour}/summary/`
+        ]);
+        for ( let j = 0; j < data.stops.length; j++ ) {
+          paths = paths.concat([
+            `/tour/${tour}/stop/${j}/arrive/`,
+            `/tour/${tour}/stop/${j}/navigate/`,
+          ])
+        }
+      }
+      return paths;
+    }
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Killarney Bicycle Tours',
