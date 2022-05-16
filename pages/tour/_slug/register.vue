@@ -61,7 +61,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn" @click="register">Start Tour</a>
+              <NuxtLink class="btn" :to="startTour" @click.native="register">Start Tour</NuxtLink>
             </div>
           </div>
         </div>
@@ -86,6 +86,13 @@ export default {
     }
   },
 
+  computed: {
+
+    startTour: function() {
+      return "/tour/" + this.tour + "/start";
+    }
+
+  },
 
   methods: {
 
@@ -108,10 +115,6 @@ export default {
       this.$storage.setUniversal('description', this.description);
       this.$storage.setUniversal('size', this.size);
       this.$storage.setUniversal('email', this.email);
-      
-      window.location = "/tour/" + this.tour + "/start";
-
-      return false;
     }
 
   }

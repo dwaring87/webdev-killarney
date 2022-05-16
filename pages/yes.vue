@@ -12,7 +12,7 @@
         Yay!!  This is so exciting!
       </p>
       <div class="mt-10 px-10 py-2 w-full mx-auto fixed bottom-0 left-0 flex gap-10">
-          <NuxtLink :to="photoUrl" class="flex-grow text-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Take Photo</NuxtLink>
+        <NuxtLink :to="photoUrl" class="flex-grow text-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Take Photo</NuxtLink>
       </div>
     </div>
   </div>
@@ -40,15 +40,6 @@ export default {
     this.photo_id = this.$route.query.id;
     this.back = this.$route.query.back;
     this.$storage.setUniversal('answer', 'yes');
-  },
-
-  methods: {
-
-    yes: function() {
-      this.$storage.setUniversal('answer', 'yes');
-      window.location = this.photoUrl;
-    }
-
   }
 }
 </script>

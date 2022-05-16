@@ -116,7 +116,6 @@ export default {
     downloadImage() {
       const download = document.getElementById("downloadPhoto");
       const canvas = document.getElementById("photoTaken").toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
-      console.log(canvas);
       this.$storage.setUniversal(this.id, canvas);
       window.location = this.back;
     }
