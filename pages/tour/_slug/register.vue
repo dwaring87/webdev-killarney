@@ -81,7 +81,7 @@ export default {
       name: this.$storage.getUniversal('name') || 'Marvid',
       description: this.$storage.getUniversal('description') || 'We\'re a couple of cool plant lovers from NY hoping to see some cool plants, animals, and waterfalls',
       size: this.$storage.getUniversal('size') || 2,
-      email: this.$storage.getUniversal('email') || 'marvid@killarneybicycletours.com',
+      email: this.$storage.getUniversal('email') || 'webmaster@killarneybicycletours.com',
       error: undefined
     }
   },
