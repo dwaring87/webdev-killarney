@@ -61,9 +61,8 @@
                   </div>
                 </div>
               </div>
-              <div @click="register">
-                <NuxtLink class="btn" :to="startTour">Start Tour</NuxtLink>
-              </div>
+              <a class="btn" style="cursor: pointer" @click="register">Start Tour</a>
+              <NuxtLink :to="startTour" v-show="false">Start Tour</NuxtLink>
             </div>
           </div>
         </div>
@@ -117,6 +116,10 @@ export default {
       this.$storage.setUniversal('description', this.description);
       this.$storage.setUniversal('size', this.size);
       this.$storage.setUniversal('email', this.email);
+
+      this.$router.push({
+        path: this.startTour
+      });
     }
 
   }
