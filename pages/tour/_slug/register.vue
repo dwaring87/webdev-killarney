@@ -61,7 +61,9 @@
                   </div>
                 </div>
               </div>
-              <NuxtLink class="btn" :to="startTour" @click.native="register">Start Tour</NuxtLink>
+              <div @click="register">
+                <NuxtLink class="btn" :to="startTour">Start Tour</NuxtLink>
+              </div>
             </div>
           </div>
         </div>
