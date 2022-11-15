@@ -2,8 +2,10 @@
   <div class="max-w-7xl mx-auto mb-12">
     <div class="max-w-5xl px-4 mx-auto">
 
-      <div v-if="yes" class="bg-green-800 text-gray-200 rounded-md shadow-md p-4 mt-4 md:mt-0 text-center">
-        <p class="text-xl md:text-2xl"><i class="ri-group-2-fill"></i>&nbsp;&nbsp;Marissa and David are getting married!</p>
+      <div v-if="yes" class="bg-green-800 text-gray-200 rounded-md shadow-md mt-4 md:mt-0 text-center">
+        <a href="https://killarneybicycletours.com">
+          <p class="text-xl md:text-2xl p-4"><i class="ri-group-2-fill"></i>&nbsp;&nbsp;Marissa and David are getting married!</p>
+        </a>
       </div>
 
       <div class="flex flex-wrap justify-between items-center my-6">
