@@ -71,13 +71,22 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/universal-storage',
-    'nuxt-leaflet'
+    'nuxt-leaflet',
+    'vue-plausible'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   storage: {},
+
+  plausible: {
+    domain: 'tour.killarneybicycletours.com',
+    apiHost: 'https://a.davidwaring.net',
+    enableAutoPageviews: true,
+    hashMode: true,
+    trackLocalhost: false
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
